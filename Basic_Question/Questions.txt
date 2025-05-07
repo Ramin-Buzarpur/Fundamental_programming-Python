@@ -1,0 +1,224 @@
+Python Programming Practice Exercises (Part 1 - Basic)
+-------------------------------------
+This file contains practice problems covering fundamental Python concepts,
+from variables and conditionals to functions and advanced topics.
+
+Sections & Questions:
+---------------------
+Section 1: Variable Assignment & Basic Operations (Q1-Q4)
+    1. (x + y) * z calculation
+    2. Circle circumference using PI
+    3. String length without len()
+    4. Swapping variables without temp
+
+Section 2: Conditionals (Q5-Q10)
+    5. Student score grading
+    6. FizzBuzz
+    7. Sort 3 numbers
+    8. Age/gender access check
+    9. Number range validation
+    10. Leap year checker
+
+Section 3: Lists (Q11-Q18)
+    11. Sum of odd numbers
+    12. Filter names starting with 'A'
+    13. List reversal
+    14. Remove negatives
+    15. Second smallest number
+    16. All possible list sums
+    17. Remove consecutive duplicates
+    18. Check strictly increasing list
+
+Section 4: Tuples (Q19-Q23)
+    19. Euclidean distance
+    20. Immutable tuple demo
+    21. Common tuple elements
+    22. Tuple-to-integer conversion
+    23. Color tuple to string
+
+Section 5: Dictionaries (Q24-Q31)
+    24. Total sales calculation
+    25. Dictionary merging
+    26. Highest grade finder
+    27. Remove empty keys
+    28. Word definition lookup
+    29. Most frequent number
+    30. User data validation
+    31. Filter products by price
+
+Section 6: Sets (Q32-Q35)
+    32. Set intersection/union
+    33. List-to-set conversion check
+    34. Symmetric difference
+    35. Non-prime/non-composite numbers
+
+Section 7: Functions (Q36-Q43)
+    36. Standard deviation
+    37. Fibonacci sequence
+    38. Sum of squares (*args)
+    39. List filtering
+    40. Decimal to binary
+    41. BMI calculator
+    42. Palindrome check
+    43. Age from birthdate
+
+Section 8: Advanced Topics (Q44-Q50)
+    44. Department salary averages
+    45. Matrix diagonal sum
+    46. Nested JSON key access
+    47. Number frequency counter
+    48. Text statistics analyzer
+    49. Calculator class (OOP)
+    50. Function result 
+    
+<<<<<<<<----------------------------------------->>>>>>>>
+
+
+Section 1: Variable Assignment and Basic Operations Q(1 to 4)
+
+    1. Write a program that takes three variables `x`, `y`, and `z` from the user and calculates `(x + y) * z`.  
+    *Hint: Use `input()` and type conversion.*
+
+    2. Define a variable `PI` storing the value 3.14, then calculate and print the circumference of a circle with radius 5.  
+    *Hint: Circumference formula = `2 * PI * r`.*
+
+    3. Write a program that takes a string from the user and counts its characters **without** using `len()`.  
+    *Hint: Use a `for` loop.*
+
+    4. Swap the values of two numbers **without** a temporary variable.  
+    *Hint: Use Python’s tuple unpacking (e.g., `a, b = b, a`).*
+
+
+
+Section 2: Conditionals Q(5 to 10)
+
+    5. Write a program that takes a student’s score and prints their status:  
+    - Below 10: "Fail"  
+    - 10–15: "Needs Improvement"  
+    - 15–20: "Pass"  
+    *Hint: Use `if`, `elif`, and `else`.*
+
+    6. Take a number from the user. If divisible by 3 and 5, print "FizzBuzz"; if only by 3, print "Fizz"; if only by 5, print "Buzz".  
+
+    7. Write a program that takes three numbers and sorts them in descending order using `if` statements.  
+
+    8. Take a user’s age and gender. Print "Access Granted" if age > 18 and gender is "Male".  
+
+    9. Check if a number is between 100 and 200 (inclusive) and print "Valid".  
+
+    10. Write a program to check if a year is a leap year.  
+        *Hint: Leap years are divisible by 4, but not by 100 unless also divisible by 400.*
+
+
+
+Section 3: Lists  Q(11 to 18)
+    11. Create a list of numbers and calculate the sum of odd numbers.  
+        *Hint: Use `for` loop and `if num % 2 != 0`.*
+
+    12. Given a list of student names, extract names starting with "A".  
+
+    13. Reverse the list `[10, 20, 30, 40, 50]` using slicing or the `reverse()` method.  
+
+    14. Write a program to remove negative numbers from a list.  
+
+    15. Find the second smallest number in a list.  
+        *Hint: Sort the list and select the second element.*
+
+    16. Given two lists, generate all possible sums of their elements.  
+        Example: `[1, 2]` and `[3, 4]` → `[4, 5, 5, 6]`  
+
+    17. Remove consecutive duplicates from a list.  
+        Example: `[1, 2, 2, 3, 3, 3, 4]` → `[1, 2, 3, 4]`  
+
+    18. Check if a list is strictly increasing (each element > previous).  
+
+
+
+Section 4: Tuples Q(19 to 23)
+
+    19. Calculate the Euclidean distance of a tuple `(x, y)` from the origin.  
+        *Hint: Formula: `(x² + y²)**0.5`.*
+
+    20. Create a tuple for book info `(title, author, year)`. Try to modify the year (note: tuples are immutable!).  
+
+    21. Find common elements between two tuples and return them in a list.  
+
+    22. Convert a tuple of digits into an integer.  
+        Example: `(1, 2, 3)` → `123`  
+
+    23. Convert a tuple of colors `("red", "green", "blue")` into a string separated by "|".  
+
+
+
+Section 5: Dictionaries Q(24 to 31)
+
+    24. Calculate the total sales from a dictionary of products.  
+        Example: `{"apple": 100, "banana": 200}` → `300`  
+
+    25. Merge two dictionaries, summing values for duplicate keys.  
+
+    26. Find the student with the highest average grade from a dictionary of grades.  
+
+    27. Remove keys with empty values from a user-input dictionary.  
+
+    28. Build a dictionary of word definitions. Let users search for a word’s meaning.  
+
+    29. Find the most frequent number in a dictionary of number frequencies.  
+
+    30. Validate a user info dictionary (name, age, email). Throw errors for missing keys.  
+
+    31. From a list of product dictionaries, filter those with prices above the average.  
+
+
+
+Section 6: Sets Q(32 to 43)
+
+    32. Given two sets, return their intersection and union in a dictionary.  
+        Example: `set1 = {1, 2}`, `set2 = {2, 3}` → `{"intersection": {2}, "union": {1, 2, 3}}`  
+
+    33. Convert a list to a set and check if its length changed.  
+
+    34. Calculate the symmetric difference of two sets.  
+        *Hint: `set1 ^ set2`*  
+
+    35. Identify numbers that are neither prime nor composite (e.g., 0 or 1) from two sets.  
+
+
+
+Section 7: Functions Q(36 to 43)
+
+    36. Write a function to calculate the standard deviation of a list of numbers.  
+
+    37. Write a recursive function to generate the Fibonacci sequence up to the nth term.  
+
+    38. Create a function with `*args` to return the sum of squares of inputs.  
+
+    39. Write a function to filter elements in a list based on a condition.  
+        Example: Filter odd numbers from `[1, 2, 3]` → `[1, 3]`  
+
+    40. Convert a decimal number to binary using a function.  
+
+    41. Write a function to calculate BMI (weight in kg, height in meters).  
+
+    42. Check if a string is a palindrome using a function.  
+
+    43. Write a function to calculate age from a date string in "YYYY-MM-DD" format.  
+
+
+
+Section 8: Advanced Topics Q(44 to 50)
+
+    44. Calculate average salaries per department from a list of employee dictionaries.  
+
+    45. Compute the sum of the main diagonal of a matrix (2D list).  
+
+    46. Extract nested key values from a JSON-like structure (e.g., `data["person"]["age"]`).  
+
+    47. Read numbers from a text file and create a frequency histogram (dictionary).  
+
+    48. Write a function to count sentences, words, and characters in a text.  
+
+    49. Design a simple calculator class with add, subtract, multiply, and divide methods.  
+
+    50. Implement a cache dictionary to store results of expensive function calls.  
+    
