@@ -7,7 +7,7 @@ This repository is dedicated to the Python Programming Fundamentals course, shar
 💻 GitHub: [Ramin-Buzarpur](https://github.com/Ramin-Buzarpur)  
 📱 Telegram: [@alien_hawk](https://t.me/alien_hawk)  
 
-# 🛠 Contents include:
+# 🛠 Contents include
   Sample codes & in-class exercises  
   Lecture slides & educational notes  
   Practical projects & hands-on examples
